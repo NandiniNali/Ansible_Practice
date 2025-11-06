@@ -1,0 +1,180 @@
+/* 💫 Base Layout */
+body {
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(145deg, #e0f7ff, #f3e6ff); /* baby blue + lavender */
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: #444;
+  min-height: 100vh;
+}
+
+/* 🎬 App Container */
+.movie-container {
+  background: #ffffff;
+  width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  padding: 25px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 📌 Sticky Header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 10;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #d6c9ff; /* lavender border */
+}
+
+/* 🌸 Title */
+.movie-container h2 {
+  font-weight: 700;
+  font-style: italic;
+  color: #7b9cff; /* baby blue */
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* 🎀 Form Section */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-grid input {
+  border: 1.5px solid #c6d8ff; /* light baby blue border */
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #f0f8ff; /* soft baby blue background */
+  transition: 0.2s ease;
+  font-size: 14px;
+}
+
+.form-grid input:focus {
+  outline: none;
+  border-color: #7b9cff; /* baby blue focus */
+  background: #ffffff;
+  box-shadow: 0 0 5px #c6d8ff;
+}
+
+select {
+  border: 1.5px solid #c6d8ff;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #f7f0ff; /* soft lavender background */
+  font-size: 14px;
+}
+
+/* ✨ Buttons */
+.btn-group {
+  margin-top: 15px;
+}
+
+button {
+  background: #a3c4ff; /* baby blue */
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 0 5px;
+  font-style: italic;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #7b9cff; /* darker baby blue hover */
+  box-shadow: 0 3px 6px rgba(123, 156, 255, 0.3);
+}
+
+/* 🎞️ Movie List */
+.table-wrapper {
+  width: 100%;
+  margin-top: 20px;
+  max-height: 230px;
+  overflow-y: auto;
+  border-radius: 12px;
+  border: 1px solid #c6d8ff;
+  background: #ffffff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e3e6ff;
+}
+
+th {
+  background: #d6c9ff; /* lavender header */
+  color: #5b3d99; /* darker lavender text */
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+tr:hover {
+  background: #f0f3ff; /* soft hover lavender */
+}
+
+/* 🩵 Message Banner */
+.message-banner {
+  background: #e0f7ff; /* baby blue */
+  color: #4b7dcf;
+  padding: 8px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(123, 156, 255, 0.2);
+}
+
+/* 💖 Action Buttons */
+.action-buttons button {
+  margin: 0 4px;
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+.btn-green {
+  background: #c6d8ff; /* light baby blue */
+  color: #1b3b8f; /* dark blue text */
+}
+
+.btn-red {
+  background: #e0d0ff; /* light lavender */
+  color: #5b2e8f; /* dark lavender text */
+}
+
+.btn-green:hover {
+  background: #7b9cff;
+}
+
+.btn-red:hover {
+  background: #b38ed8;
+}
+
+/* 🌼 Custom Scrollbar for Table */
+.table-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #a3c4ff; /* baby blue scrollbar */
+  border-radius: 10px;
+}

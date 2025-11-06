@@ -1,0 +1,13 @@
+package com.example.demo.service;
+
+import java.util.List;
+import com.example.demo.entity.BucketEntity;
+
+public interface BucketService {
+    BucketEntity addBucket(BucketEntity b);
+    List<BucketEntity> getAllBuckets();
+    BucketEntity getBucketById(int id);
+    BucketEntity updateBucket(BucketEntity b);
+    void deleteBucketById(int id);
+    List<BucketEntity> getBucketByStatus(String status);
+}

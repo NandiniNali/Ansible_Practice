@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\Practice\BuddyBucket\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1043463835.index
+3510386273.index
+67511376.index
+2289551075.index
+1708981213.index
+2124416987.index
